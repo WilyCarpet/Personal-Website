@@ -5,8 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+
+    <!-- Link for the button -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        .banner {
+            background: #009579
+        }
+
+        .banner__content {
+            padding: 16px;
+            max-width: 1000px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="banner">
+        <div class="banner__content">
+            <div class="banner__text">
+                <strong>Reminder: </strong> Your subcription ends in 22 days. Renew it to avoid deletion
+                <button class="banner__close" type="button">
+                    <span class="material-symbols-outlined">
+                        close
+                        </span>
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
