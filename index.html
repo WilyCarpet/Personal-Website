@@ -21,6 +21,26 @@
         .banner__content {
             padding: 16px;
             max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .banner__text  {
+            flex-grow: 1;
+            line-height: 1.4;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .banner__close {
+            background-color: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .banner__text,
+        .banner__close > span {
+            color: #fff;
         }
     </style>
 </head>
@@ -32,10 +52,15 @@
                 <button class="banner__close" type="button">
                     <span class="material-symbols-outlined">
                         close
-                        </span>
+                    </span>
                 </button>
             </div>
         </div>
     </div>
+    <script>
+        document.querySelector(".banner__close").addEventListener("click", function() {
+            this.closest(".banner").style.display = "none";
+        });
+    </script>
 </body>
 </html>
